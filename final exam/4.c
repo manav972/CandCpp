@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int arr[100],n,i;
+	int*ptr;
+	
+	printf("enter size of array:");
+	scanf("%d",&n);
+	
+	printf("enter %d elements:\n",n);
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	ptr=arr;
+	printf("square of elements:\n");
+	for(i=0;i<n;i++){
+		printf("%d",(*(ptr+i))*(*(ptr+i)));
+	}
+	printf("\n");
+}
